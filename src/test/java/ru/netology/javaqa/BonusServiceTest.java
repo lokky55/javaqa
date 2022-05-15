@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class BonusServiceTest {
 
     @ParameterizedTest   //Вводим такой тип теста если костяк один но только параметры разные их задаем в параметрах метода test ниже
-    @CsvFileSource (resources ={"/testdata.csv}"})
+    @CsvFileSource (resources ={"/testdata.csv"})
     public void test(int amount, boolean isRegistered, int expected) { //название метода Test
         BonusService service = new BonusService();
         int actual = service.calculate(amount, isRegistered);

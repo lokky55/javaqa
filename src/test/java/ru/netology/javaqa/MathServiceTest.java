@@ -11,11 +11,4 @@ public class MathServiceTest {
         int expected = 21;
         Assertions.assertEquals(expected, actual);
     }
-    @Test
-    public void test1() {
-        MathService service = new MathService();
-        int actual = service.crazyCount(-100);
-        int expected = 21;
-        Assertions.assertEquals(expected, actual);
-    }
-}
+ }
